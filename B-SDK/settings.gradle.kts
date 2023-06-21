@@ -14,11 +14,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "A-SDK"
+rootProject.name = "B-SDK"
 
 include(":app")
 
-include(":x-core-lib")
-include(":y-core-lib")
-
-include(":a-sdk")
+include(":b-sdk")

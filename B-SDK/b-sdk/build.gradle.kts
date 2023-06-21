@@ -49,6 +49,5 @@ dependencies {
     androidTestImplementation(Dependencies.AndroidX.junit)
     androidTestImplementation(Dependencies.AndroidX.espresso)
 
-    implementation(project(":x-core-lib"))
-    implementation(project(":y-core-lib"))
+    implementation("com.mohsenoid.core:xLib:1.0.0")
 }

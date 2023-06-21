@@ -15,11 +15,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mohsenoid.example.app.ui.theme.ExampleAppTheme
-import com.mohsenoid.sdk.a.ASdk
+import com.mohsenoid.sdk.b.BSdk
 
 class MainActivity : ComponentActivity() {
 
-    private val aSdk = ASdk(context = this)
+    private val bSdk = BSdk(context = this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,8 +31,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     ActionButton(
-                        onClick = aSdk::doYourJob,
-                        text = "Action A",
+                        onClick = bSdk::doYourJob,
+                        text = "Action B",
                         modifier = Modifier
                             .wrapContentSize()
                             .padding(16.dp)
@@ -59,7 +59,7 @@ fun GreetingPreview() {
     ExampleAppTheme {
         ActionButton(
             onClick = {},
-            text = "Action A"
+            text = "Action B"
         )
     }
 }
