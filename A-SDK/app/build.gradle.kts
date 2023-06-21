@@ -36,7 +36,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
     buildFeatures {
         compose = true
@@ -74,5 +74,5 @@ dependencies {
     debugImplementation(Dependencies.AndroidX.Compose.uiTooling)
     debugImplementation(Dependencies.AndroidX.Compose.uiTestManifest)
 
-    implementation(project(":x-core-lib"))
+    implementation(project(":a-sdk"))
 }

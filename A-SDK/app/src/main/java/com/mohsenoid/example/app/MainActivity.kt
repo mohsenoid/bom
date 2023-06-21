@@ -1,7 +1,6 @@
 package com.mohsenoid.example.app
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,18 +15,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mohsenoid.example.app.ui.theme.ExampleAppTheme
-import com.mohsenoid.x_lib.Logger
-import com.mohsenoid.x_lib.XLib
+import com.mohsenoid.sdk.a.ASdk
 
 class MainActivity : ComponentActivity() {
 
-    private val logger = object : Logger {
-        override fun log(message: String) {
-            Toast.makeText(this@MainActivity, message, Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private val xLib: XLib = XLib(logger = logger)
+    private val aSdk = ASdk(context = this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     ActionButton(
-                        onClick = xLib::doYourJob,
+                        onClick = aSdk::doYourJob,
                         text = "Action",
                         modifier = Modifier
                             .wrapContentSize()

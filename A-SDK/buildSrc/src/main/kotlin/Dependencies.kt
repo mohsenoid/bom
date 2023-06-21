@@ -6,6 +6,7 @@ object Dependencies {
 
     object AndroidX {
         const val core = "androidx.core:core-ktx:1.10.1"
+        const val appCompat = "androidx.appcompat:appcompat:1.6.1"
         const val activityCompose = "androidx.activity:activity-compose:1.7.2"
         const val junit = "androidx.test.ext:junit:1.1.5"
         const val espresso = "androidx.test.espresso:espresso-core:3.5.1"
@@ -32,5 +33,9 @@ object Dependencies {
         const val bom = "org.jetbrains.kotlin:kotlin-bom:$version"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
         const val test = "org.jetbrains.kotlin:kotlin-test"
+    }
+
+    object Google {
+        const val material = "com.google.android.material:material:1.6.0"
     }
 }
