@@ -14,6 +14,10 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Example App"
+
 include(":app")
+
 include(":x-core-lib")
+include(":y-core-lib")
+
 include(":a-sdk")
