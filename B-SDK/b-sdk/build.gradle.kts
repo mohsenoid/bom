@@ -49,5 +49,9 @@ dependencies {
     androidTestImplementation(Dependencies.AndroidX.junit)
     androidTestImplementation(Dependencies.AndroidX.espresso)
 
-    implementation("com.mohsenoid.core:xLib:6.0.0")
+    implementation("com.mohsenoid.core:xLib"){
+        version{
+            strictly("7.0.0")
+        }
+    }
 }

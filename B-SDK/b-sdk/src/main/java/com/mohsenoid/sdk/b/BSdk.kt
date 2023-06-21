@@ -8,8 +8,8 @@ import com.mohsenoid.x_lib.XLib
 class BSdk(context: Context) {
 
     private val logger = object : Logger {
-        override fun log(message: String) {
-            Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+        override fun log(tag: String, message: String) {
+            Toast.makeText(context, "$tag: $message", Toast.LENGTH_SHORT).show()
         }
     }
 

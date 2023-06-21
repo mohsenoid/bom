@@ -74,7 +74,7 @@ dependencies {
     debugImplementation(Dependencies.AndroidX.Compose.uiTooling)
     debugImplementation(Dependencies.AndroidX.Compose.uiTestManifest)
 
-    implementation(platform("com.mohsenoid:mohsenoid-bom:2.0.0"))
+    implementation(platform("com.mohsenoid:mohsenoid-bom:3.0.0"))
     implementation("com.mohsenoid.sdk:aSdk")
     implementation("com.mohsenoid.sdk:bSdk")
 }
