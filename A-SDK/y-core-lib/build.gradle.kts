@@ -1,7 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("my-maven-publish")
+    id("lib-maven-publish")
 }
 
 project.ext.set("PUBLICATION_GROUP_ID", "com.mohsenoid.core")

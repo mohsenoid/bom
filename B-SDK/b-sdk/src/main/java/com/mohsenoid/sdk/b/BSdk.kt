@@ -14,6 +14,7 @@ class BSdk(context: Context) {
     }
 
     private val xLib: XLib = XLib(logger = logger)
+
     fun doYourJob() {
         xLib.doYourJob(number = 0)
     }

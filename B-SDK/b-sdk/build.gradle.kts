@@ -1,7 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("my-maven-publish")
+    id("lib-maven-publish")
 }
 
 project.ext.set("PUBLICATION_GROUP_ID", "com.mohsenoid.sdk")
@@ -10,7 +10,7 @@ project.ext.set("PUBLICATION_PACKAGING", "aar")
 project.ext.set("PUBLICATION_COMPONENT", "release")
 
 android {
-    namespace = "com.mohsenoid.sdk.a"
+    namespace = "com.mohsenoid.sdk.b"
     compileSdk = SdkVersions.compileSdk
 
     defaultConfig {
