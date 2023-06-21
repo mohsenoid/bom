@@ -5,7 +5,7 @@ plugins {
 }
 
 project.ext.set("PUBLICATION_GROUP_ID", "com.mohsenoid.sdk")
-project.ext.set("PUBLICATION_ARTIFACT_ID", "aSdk")
+project.ext.set("PUBLICATION_ARTIFACT_ID", "bSdk")
 project.ext.set("PUBLICATION_PACKAGING", "aar")
 project.ext.set("PUBLICATION_COMPONENT", "release")
 
@@ -49,5 +49,5 @@ dependencies {
     androidTestImplementation(Dependencies.AndroidX.junit)
     androidTestImplementation(Dependencies.AndroidX.espresso)
 
-    implementation("com.mohsenoid.core:xLib:1.0.0")
+    implementation("com.mohsenoid.core:xLib:6.0.0")
 }
