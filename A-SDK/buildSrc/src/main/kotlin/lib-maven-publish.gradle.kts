@@ -63,9 +63,3 @@ fun MavenPom.configureScm() {
         developerConnection.set("scm:git:git@github.com:mohsenoid/example.git")
     }
 }
-
-// We don't want to publish modules metadata files to Maven repository
-// https://docs.gradle.org/current/userguide/publishing_gradle_module_metadata.html#sec:understanding-gradle-module-md
-tasks.withType<GenerateModuleMetadata> {
-    enabled = false
-}
