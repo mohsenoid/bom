@@ -53,28 +53,28 @@ android {
 
 dependencies {
 
-    implementation(Dependencies.AndroidX.core)
-    implementation(Dependencies.AndroidX.Lifecycle.runtime)
-    implementation(Dependencies.AndroidX.activityCompose)
+    implementation(libs.androidX.core)
+    implementation(libs.androidX.lifecycle.runtime)
+    implementation(libs.androidX.activityCompose)
 
-    implementation(platform(Dependencies.AndroidX.Compose.bom))
-    implementation(Dependencies.AndroidX.Compose.ui)
-    implementation(Dependencies.AndroidX.Compose.uiGraphics)
-    implementation(Dependencies.AndroidX.Compose.uiToolingPreview)
-    implementation(Dependencies.AndroidX.Compose.material3)
+    implementation(platform(libs.compose.bom))
+    implementation(libs.compose.ui)
+    implementation(libs.compose.uiGraphics)
+    implementation(libs.compose.uiToolingPreview)
+    implementation(libs.compose.material3)
 
-    testImplementation(Dependencies.junit)
+    testImplementation(libs.junit)
 
-    androidTestImplementation(Dependencies.AndroidX.junit)
-    androidTestImplementation(Dependencies.AndroidX.espresso)
+    androidTestImplementation(libs.androidX.junit)
+    androidTestImplementation(libs.androidX.espresso)
 
-    androidTestImplementation(platform(Dependencies.AndroidX.Compose.bom))
-    androidTestImplementation(Dependencies.AndroidX.Compose.uiTestJunit4)
+    androidTestImplementation(platform(libs.compose.bom))
+    androidTestImplementation(libs.compose.uiTestJunit4)
 
-    debugImplementation(Dependencies.AndroidX.Compose.uiTooling)
-    debugImplementation(Dependencies.AndroidX.Compose.uiTestManifest)
+    debugImplementation(libs.compose.uiTooling)
+    debugImplementation(libs.compose.uiTestManifest)
 
-    implementation(platform("com.mohsenoid:mohsenoid-bom:2.0.0"))
-    implementation("com.mohsenoid.sdk:aSdk")
-    implementation("com.mohsenoid.sdk:bSdk")
+    implementation(platform(libs.bom))
+    implementation(libs.aSdk)
+    implementation(libs.bSdk)
 }
